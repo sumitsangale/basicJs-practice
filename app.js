@@ -31,3 +31,14 @@ testArr.forEach((value, i) => {
 });
 // console.log(uniqueArr);
 //****set in JS */
+
+//**** callback in JS */
+function calculate(a, b, myCallback) {
+  sum = a + b;
+  myCallback(sum);
+}
+function dispResult(result) {
+  console.log(result);
+}
+// calculate(10, 20, dispResult);
+//**** callback in JS */

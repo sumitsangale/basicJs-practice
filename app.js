@@ -95,3 +95,37 @@ function Person() {
 // const p = new Person();
 // console.log(p);
 //**** Functions */
+
+//****Promises */
+function getData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // resolve("promise success...");
+      reject("promise failure...");
+    }, 1000);
+  });
+}
+
+// getData()
+//   .then((response) => {
+//     console.log("in response", response);
+//   })
+//   .catch((err) => {
+//     console.log("in error", err);
+//   });
+//****Promises */
+
+//****Async Await
+function resolveBy() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolved..");
+    }, 1000);
+  });
+}
+async function getResult() {
+  const result = await resolveBy();
+  console.log(result);
+}
+// getResult();
+//****Async Await */

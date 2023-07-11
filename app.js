@@ -129,3 +129,58 @@ async function getResult() {
 }
 // getResult();
 //****Async Await */
+
+/****map, filter, sort */
+const user = [
+  {
+    id: 1,
+    name: "aksh",
+    isActive: true,
+    age: 26,
+  },
+  {
+    id: 2,
+    name: "ajay",
+    isActive: true,
+    age: 47,
+  },
+  {
+    id: 3,
+    name: "karan",
+    isActive: false,
+    age: 23,
+  },
+  {
+    id: 4,
+    name: "samir",
+    isActive: true,
+    age: 35,
+  },
+];
+
+//??print name for active user
+//solution1//
+// const userList = [];
+// for (let i = 0; i < user.length; i++) {
+//   if (user[i].isActive) {
+//     userList.push(user[i].name);
+//   }
+// }
+// console.log(userList);
+
+//solution2//
+// const userList = [];
+// user.forEach((item) => {
+//   if (item.isActive) {
+//     userList.push(item.name);
+//   }
+// });
+// console.log(userList);
+
+//solution3//
+// const userList = user
+//   .filter((item) => item.isActive)
+//   .sort((user1, user2) => (user1.age > user2.age ? -1 : 1))
+//   .map((item) => item.name);
+// console.log(userList);
+/****END */
